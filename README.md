@@ -1,19 +1,8 @@
-# Backuper
+[![AppVentus](https://github.com/AppVentus/AvAlertifyBundle/blob/master/Media/appventus.png)](http://appventus.com)
 
-Run on the server hosting the mysql database you want to backup.
+just became...
 
-Then, add this kind of crontab job:
+[![Troopers](https://cloud.githubusercontent.com/assets/618536/18787530/83cf424e-81a3-11e6-8f66-cde3ec5fa82a.png)](http://troopers.agency)
 
-```
-0 0 * * * env SYMFONY__BACKUP__DIRECTORY="[path to backup directory]" SYMFONY__DATABASE_NAME="[database name]" SYMFONY__DATABASE_USER="[database user]" SYMFONY__DATABASE_PASSWORD="[database password]"  php [path to sources]/app/console dizda:backup:start --env=dev
-```
-`keep the dev environment argument to be sure your env variables will override parameters`
-
-## Requirements
-
-You need to have the ssh2 extension and 7z.
-
-### Ubuntu
-```
-sudo apt-get install php5-ssh2 p7zip-full
-```
+To keep going to use this bundle, please follow this link:
+[Troopers/Backuper](https://github.com/Troopers/Backuper)
