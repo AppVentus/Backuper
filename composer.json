@@ -8,7 +8,7 @@
         }
     },
     "require": {
-        "php": ">=5.3.9",
+        "php": ">=7.0.0",
         "symfony/symfony": "2.7.*",
         "doctrine/orm": "^2.4.8",
         "doctrine/doctrine-bundle": "~1.4",
@@ -20,7 +20,7 @@
         "incenteev/composer-parameter-handler": "~2.0",
         "dizda/cloud-backup-bundle": "^3.0",
         "knplabs/knp-gaufrette-bundle": "*@dev",
-        "herzult/php-ssh": "^1.0@dev"
+        "herzult/php-ssh": "dev-bugfix/cast-resource-sftp"
     },
     "require-dev": {
         "sensio/generator-bundle": "~2.3"
@@ -53,5 +53,12 @@
         "incenteev-parameters": {
             "file": "app/config/parameters.yml"
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "git@github.com:paulandrieux/php-ssh.git"
+        }
+    ]
+
 }
